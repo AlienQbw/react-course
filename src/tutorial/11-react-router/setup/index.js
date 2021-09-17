@@ -14,6 +14,7 @@ const ReactRouterSetup = () => {
   //remember the path="name..", we decide whatever name we want
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path="/">
           <Home />
