@@ -10,7 +10,21 @@ import Person from './Person';
 // navbar
 import Navbar from './Navbar';
 const ReactRouterSetup = () => {
-  return <h2>react router</h2>;
+  //now here we are setting up the routes
+  //remember the path="name..", we decide whatever name we want
+  return (
+    <Router>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/about">
+        <About />
+      </Route>
+      <Route exact path="/people">
+        <People />
+      </Route>
+    </Router>
+  );
 };
 
 export default ReactRouterSetup;
